@@ -8,9 +8,9 @@ on:
 
 jobs:
   lambda-ci:
-    uses: vishuops0210/shared-repo/.github/workflows/lambda-ci.yml@main
+    uses: vishuops0210/shared-repo/.github/workflows/ci/lambda/python.yml@main
     with:
-      runtime: 'python'
+      version: 'v1.0.0'
       function-name: 'bajaj-poc-lambda'
       s3-bucket-name: 'my-bajaj-artifacts-bucket'
       install-command: |

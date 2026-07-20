@@ -10,9 +10,11 @@ on:
 
 jobs:
   lambda-cd:
-    uses: vishuops0210/shared-repo/.github/workflows/lambda-cd.yml@main
+    uses: vishuops0210/shared-repo/.github/workflows/cd/lambda.yml@main
     with:
       git-sha: ${{ inputs.git-sha }}
+      function-name: 'bajaj-poc-lambda'
+      s3-bucket-name: 'my-bajaj-artifacts-bucket'
     secrets:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
