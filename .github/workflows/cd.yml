@@ -13,6 +13,7 @@ jobs:
     uses: vishuops0210/shared-repo/.github/workflows/cd-lambda.yml@main
     with:
       git-sha: ${{ inputs.git-sha }}
+      version: 'v1.0.0'
       function-name: 'bajaj-poc-lambda'
       s3-bucket-name: 'my-bajaj-artifacts-bucket'
     secrets:
