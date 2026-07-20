@@ -10,7 +10,7 @@ on:
 
 jobs:
   lambda-cd:
-    uses: vishuops0210/shared-repo/.github/workflows/cd/lambda.yml@main
+    uses: vishuops0210/shared-repo/.github/workflows/cd-lambda.yml@main
     with:
       git-sha: ${{ inputs.git-sha }}
       function-name: 'bajaj-poc-lambda'

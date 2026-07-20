@@ -8,7 +8,7 @@ on:
 
 jobs:
   lambda-ci:
-    uses: vishuops0210/shared-repo/.github/workflows/ci/lambda/python.yml@main
+    uses: vishuops0210/shared-repo/.github/workflows/ci-lambda-python.yml@main
     with:
       version: 'v1.0.0'
       function-name: 'bajaj-poc-lambda'
